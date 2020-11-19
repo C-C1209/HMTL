@@ -13,7 +13,7 @@
     margin-bottom: 5px;
     background-color: rgb(255, 161, 53);
     height: 35px;
-    width: 14%;
+    width: 10%;
 }
 #bbtn2{
     float: right;
@@ -22,51 +22,51 @@
 }
 
 #presentacion{
-    height: 250px;
+    height: 500px;
     background-color: rgb(248, 195, 195);
 }
 
 #imagenes{
-    height: 200px;
+    height: 405px;
     background-color: rgb(255, 24, 197);
 }
 #imag{
     float: left;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
-    height: 160px;
-    width: 160px;
+    height: 365px;
+    width: 365px;
     background-color: rebeccapurple;
 }
 
 #opciones{
     background-color: rgb(69, 17, 255);
-    height: 240px;
+    height: 320px;
 }
 #opcion{
     background-color: rebeccapurple;
     float: left;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
-    height: 170px;
-    width: 340px;
+    height: 300px;
+    width: 760px;
 }
 
 #info{
-    height: 300px;
+    height: 510px;
     background-color: rgb(56, 21, 27);
 }
 #lug{
     float: left;
     background-color: rebeccapurple;
-    height: 200px;
-    width: 380px;
-    margin-left: 25%;
-    margin-right: 25%;
+    height: 400px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
