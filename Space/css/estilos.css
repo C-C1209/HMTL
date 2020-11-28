@@ -1,0 +1,88 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+    background-image: url("../img/fondo.jpg");
+    animation: animacion 40s infinite;
+}
+/*creacion de animacion*/
+@keyframes animacion{
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 5%;
+    }
+    100%{
+        background-position: 1% 50%;
+    }
+    /*de donde a donde
+    from{
+        background-position: 0% 0%;
+    }
+    to{
+        background-position: 100% 0%;
+    }*/
+}
+#btn{
+    display: block;
+    position: fixed;
+    top: 49%;
+    left: calc(50% - 75px );
+    height: 50px;
+    width: 150px;
+    background-color: rgba(0, 0, 0,0.7);
+    border: 1px solid #1d1d1d;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 3;
+    font-weight: bold;
+    border-radius: 20px;
+
+    transition: 400ms ease-in all;
+}
+
+@keyframes animbtn{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#btn:hover{
+    background-color: rgba(250, 250, 250,0.7);
+    border: 1px solid black;
+    border-radius: 0px;
+    color: black;
+    animation: animbtn 900ms infinite ease-in-out;
+    /*transform: rotate(70deg);
+    transform: scale(.5);*/
+}
+
+@keyframes animMercurio{
+    from{
+        top:0px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+    to{
+top: 100%;
+left: 100%;
+transform: rotate(-360deg);
+    }
+}
+#mercurio{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: animMercurio 25s infinite ease-out;
+}
