@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Roboto' ,sans-serif;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+header{
+    position: fixed;
+    height: 70px;
+    border-bottom: 1px solid#c1c1c1;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+header > #logo{
+    padding-top: 15px;
+    float: left;
+    margin-left: 5%;
+}
+header > #logo >h2{
+    font-size: 1.5rem;
+}
+header > nav{
+    font-size: 1rem;
+    width: 40%;
+    float: right;
+    padding-top: 25px;
+}
+
+header nav > ul > li{
+    float: left;
+    width: 20%;
+    list-style: none;
+}
+header nav > ul > li > a{
+    text-decoration: none;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: ease-in 1s all;
+}
+header nav > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+section#main{
+    min-height: 500px;
+    width: 100%;
+    margin-top: 70px;
+    float: left;
+}
+section#main h1{
+    margin-top: 150px;
+    margin-left: 100px;
+}
+section#main h3{
+    margin-left: 100px;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    width: 50%;
+}
+/*19a49c*/
+.col{
+    width: 50%;
+    float: left;
+}
+section#main .bola{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgb(250, 206, 61);
+    float: right;
+    margin-right: -100px;
+}
+
+section#main .bola img{
+width: 500px;
+display: block;
+margin-top: 0px ;
+margin-left: 0px ;
+transform: rotate(-30deg);
+}
+
+#numeros{
+    border-left: 10px solid #19a49c;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+#numeros > div> .col > h5{
+    border-bottom: 1px solid #1d1d1d;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+/*NEWS*/
+#news,#contact{
+    margin-left: 90px;
+    width: 80%;
+    min-height: 300px;
+}
+#news .columna3{
+    margin-left: 8.3%;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+#news .columna3 a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+#news .columna3 a img{
+    width: 100%;
+    height: 80%;
+}
+
+#contact h2{
+    margin-top: 400px;
+}
+#contact fieldset{
+    border: none;
+    padding: 5px;
+}
+#contact fieldset label{
+    display: block;
+    width: 100%;
+}
+#contact fieldset input,#contact fieldset textarea{
+    display: block;
+    width: 90%;
+    border: 1px dolid #eeeeee;
+    padding:5px;
+    outline-color: #eeeeee ;
+    height: 20px;
+}
+#contact fieldset button{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    background-color: #19a49c;
+    color: white;
+    border: none;
+}
+footer{
+    text-align: center;
+    padding:40px;
+    margin-top: 150px;
+    height: 20px;
+    background-color: #19a49c;
+    color: white;
+}
+
+
