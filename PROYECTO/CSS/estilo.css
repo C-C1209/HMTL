@@ -1,0 +1,375 @@
+/*
+
+52,56,56 OSCURO
+
+azules
+
+0,95,107
+
+0,140,158
+0,180,204
+
+remarcar
+0,223,252
+*/
+*{
+    margin: 0PX;
+    padding: 0PX;
+}
+
+body{
+    background-color: rgb(0,180,204);
+    padding: 0px;
+    margin: 0px;
+
+    overflow-x: hidden;
+}
+header{
+    background-color: rgba(52,56,56);
+
+    height: 100px;
+    width: 100%;
+
+    position: fixed;
+    border-bottom: 1px solid rgb(0,223,252);
+    border-radius: 0% 0% 70% 0%;
+
+    z-index: 10;
+}
+header > #logo{
+    padding-top: 10px;
+    float: left;
+    margin-left: 5px;
+    height: 100%;
+}
+header > #logo > img{
+    float: left;
+    height: 80%;
+    background-color: RGB(0,180,204);
+    border-radius: 0% 30% 0% 30%;
+}
+header > nav{
+    float: right;
+
+    font-size: 1rem;
+    width: 60%;
+    padding-top: 35px;
+}
+header > nav > ul > li {
+    float:right;
+    list-style: none;
+    width: 16%;
+    height: 25px;
+}
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: ease-in-out all;
+    font-size: 1.3rem;
+}
+header > nav > ul > li > a:hover{
+    color:  rgba(210, 218, 219);
+    transition: ease-in-out all;
+    text-decoration: underline;
+}
+
+
+
+/* PRESENTACION*/
+section#presentacion{
+    margin-top: 100px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgb(0,95,107);
+
+    width: 100%;
+    min-height: 300px;
+
+    float: left;
+    
+}
+section#presentacion> ul >li {
+float: left;
+list-style: none;
+}
+section#presentacion> ul > li > div#imagenpresentacion{
+    background-image: url("../IMG/casual-480.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    min-height: 500px;
+    width: 800px;
+}
+section#presentacion > ul > li > div.explicacion{
+    background-image: linear-gradient(to left, rgba(0,95,107,0.4),rgba(210,210,210,0.6));
+    height: 380px;
+    width: 500px;
+
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+section#presentacion > ul > li > div > h3{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+    color: #1d1d1d;
+    font-weight: 500;
+    font-size: 5rem;
+}
+section#presentacion > ul > li > div > p{
+    color: white;
+    width: 78%;
+    height: 100%;
+}
+
+section#presentacion > ul > li > div.flecha{
+    margin-left: 120px;
+    padding-top: 90px;
+
+    width: 50px;
+
+}
+section#presentacion > ul > li > div > a >img{
+    display: block;
+
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 80%;
+    animation: animflecha 1s infinite ease-in;
+    z-index: 1;
+}
+section#presentacion > ul > li > div:hover a>img{
+    animation: animflecha 1s ease-in;
+}
+
+@keyframes animflecha{
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 20px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+/*NOSOTROS*/
+section#nosotros{
+    margin-top: 10px;
+    background-color: rgb(255,255,255);
+
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+section#nosotros >div > ul >li{
+    float: left;
+    list-style: none;
+    width: 50%;
+}
+section#nosotros >div> ul > li > div.obj{
+    width: 100%;
+    height: 60%;
+}
+section#nosotros >div> ul > li > div.obj > h2,p{
+    color: rgb(52,56,56);
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+}
+section#nosotros >div> ul > li > div.obj > h2{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+section#nosotros >div> ul > li > div.obj > p{
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom:  20%;
+}
+
+/*GALERIA
+250 X 480
+*/
+
+section#galeria{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    padding-bottom: 20px;
+    padding-top: 20px;
+    float: left;
+    width: 100%;
+    background-color:rgb(0,95,107);
+}
+section#galeria > div > ul > li{
+    float:left;
+    list-style: none;
+    width: 100%;
+}
+
+/*line 1*/
+section#galeria > div > ul > li > div {
+    width: 29%;
+    height: 250px;    
+    float: left;
+}
+
+/*parrafos y titulo y hovers*/
+.titulo{
+    margin-top: 10%;
+    height: 20%;
+    font-size: 2rem;
+	color: #fff;
+    position: relative;
+    text-decoration: underline;
+
+    visibility: hidden;
+}
+.parrafo{
+    padding: 0%;
+    margin-left: 10%;
+    margin-top: 10%;
+    position: relative;
+    color: rgb(230, 230, 230);
+    font-size: 1.2rem;
+    width: 80%;
+
+    visibility: hidden;
+}
+section#galeria > div > ul > li > div:hover .titulo{
+    animation: animaletras 0.4s ease-in;
+
+    color: rgba(255,255,255,1);
+    visibility: visible;
+}
+section#galeria > div > ul > li > div:hover .parrafo{
+animation: animaletras 0.4s ease-in;
+
+color: rgb(255,255,255);
+visibility: visible;
+}
+section#galeria > div > ul > li > div:hover:before{
+
+    animation:  animaimage 0.4s ease-in-out;
+    transform: scale(1.03);
+
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    }
+section#galeria > div > ul > li > div:hover{
+    animation: animatam 0.4s ease-in-out;
+    transform: scale(1.03);
+}
+/*img 1*/
+section#galeria > div > ul > li > div#img1{
+    background-image: url("../IMG/casual-480.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    margin-left: 20%; 
+
+    text-align: center;    
+}
+/*img2*/
+section#galeria > div > ul > li > div#img2 {
+    background-image: url("../IMG/natural-480.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    margin-right: 20%;  
+
+    text-align: center;  
+} 
+
+/*line 2*/
+section#galeria > div > ul > li > div#img3 {
+    background-image: url("../IMG/paisaje-480.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 30%;
+
+    margin-left: 5%;  
+
+    text-align: center;  
+}
+section#galeria > div > ul > li > div#img4 {
+    background-image: url("../IMG/evento-480.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 30%;
+ 
+
+    text-align: center;  
+}
+section#galeria > div > ul > li > div#img5 {
+    background-image: url("../IMG/blancoynegro-480-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 30%;
+
+    text-align: center;  
+}
+
+@keyframes animatam{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.03);
+    }
+}
+@keyframes animaimage{
+    0%{
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0);
+        transform: scale(1);
+    }
+    100%{
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.3);
+        transform: scale(1.03);
+    }
+    
+}
+
+@keyframes animaletras{
+    0%{
+        visibility: hidden;
+        color: rgba(255,255,255,0);
+    }
+    100%{
+        visibility: visible;
+        color: rgba(255,255,255,1);
+    }
+}
